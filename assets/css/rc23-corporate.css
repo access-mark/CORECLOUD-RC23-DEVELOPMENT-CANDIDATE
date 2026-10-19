@@ -1,0 +1,18 @@
+/* RC23 corporate experience: presentation only. All existing paths and assessment code remain unchanged. */
+.home-page .rc23-corporate-hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(115deg,#061423 0%,#0b2940 58%,#0a2335 100%)}
+.home-page .rc23-corporate-hero>.container{position:relative;z-index:1}
+.home-page .rc23-corporate-hero .hero-grid{position:relative;isolation:isolate;min-height:clamp(440px,47vw,690px);align-items:center}
+.home-page .rc23-corporate-hero .hero-grid>div:nth-child(2){position:relative;z-index:2;max-width:710px}
+.home-page .rc23-corporate-hero .rc23-hero-photo{position:absolute;z-index:-1;inset:0 -6vw 0 34%;background-image:linear-gradient(90deg,#061423 0%,rgba(6,20,35,.92) 10%,rgba(6,20,35,.28) 53%,rgba(6,20,35,.05) 100%),url('../img/rc23/executive-boardroom.webp');background-size:cover;background-position:center 42%;pointer-events:none}
+.home-page .rc23-corporate-hero h1{max-width:670px;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.26)}
+.home-page .rc23-corporate-hero .lead{max-width:600px}
+.home-page .rc23-corporate-hero .orchestration-board{display:none}
+.home-page .rc23-corporate-hero .partner-strip{position:relative;z-index:2}
+.home-page .rc23-silverfort{background:#07192b;position:relative;isolation:isolate;overflow:hidden}
+.home-page .rc23-silverfort:before{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#07192b 0%,rgba(7,25,43,.96) 35%,rgba(7,25,43,.55) 76%,rgba(7,25,43,.72) 100%),url('../img/rc23/enterprise-datacentre.webp') center / cover no-repeat}
+.home-page .rc23-silverfort .cc-sf-panel{background:rgba(6,22,38,.58);border:1px solid rgba(84,188,218,.2);box-shadow:0 16px 54px rgba(0,0,0,.16)}
+.home-page .rc23-silverfort .cc-sf-aside{background:rgba(4,17,29,.83)}
+.rc23-sf-logo{display:block;max-width:175px;max-height:54px;width:auto;height:auto;object-fit:contain;object-position:left center;margin-bottom:15px}
+@media(max-width:900px){.home-page .rc23-corporate-hero .hero-grid{min-height:520px}.home-page .rc23-corporate-hero .rc23-hero-photo{inset:0 -4vw 0 8%;background-image:linear-gradient(90deg,rgba(6,20,35,.94),rgba(6,20,35,.64)),url('../img/rc23/executive-boardroom.webp')}.home-page .rc23-corporate-hero .hero-grid>div:nth-child(2){max-width:100%}}
+@media(max-width:600px){.home-page .rc23-corporate-hero .hero-grid{min-height:0;padding-block:52px}.home-page .rc23-corporate-hero .rc23-hero-photo{inset:0 -5vw;background-position:60% center;background-image:linear-gradient(90deg,rgba(6,20,35,.96),rgba(6,20,35,.8)),url('../img/rc23/executive-boardroom.webp')}.home-page .rc23-silverfort:before{background-image:linear-gradient(90deg,rgba(7,25,43,.94),rgba(7,25,43,.86)),url('../img/rc23/enterprise-datacentre.webp')}}
+@media(prefers-reduced-data:reduce){.home-page .rc23-corporate-hero .rc23-hero-photo,.home-page .rc23-silverfort:before{background-image:none}}

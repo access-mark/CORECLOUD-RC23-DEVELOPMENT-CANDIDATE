@@ -1,0 +1,6 @@
+# Supported by hosts such as Netlify / Cloudflare Pages. Other hosts must set equivalent headers.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()

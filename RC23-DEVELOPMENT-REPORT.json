@@ -1,0 +1,16 @@
+{
+  "status": "DEVELOPMENT CANDIDATE - NOT PRODUCTION CERTIFIED",
+  "source": "CoreCloudZA.com-main.zip",
+  "changed": [
+    "index.html",
+    "assets/css/rc23-corporate.css",
+    "assets/img/rc23/executive-boardroom.webp",
+    "assets/img/rc23/enterprise-datacentre.webp"
+  ],
+  "assessment_source_files_unchanged": true,
+  "all_other_html_unchanged": true,
+  "visual_assets": "cropped from approved concept mockup; prototype provenance; replace with licensed originals before release",
+  "browser_mobile": "NOT VERIFIED",
+  "formsubmit_delivery": "NOT VERIFIED",
+  "live_site": "NOT MODIFIED"
+}

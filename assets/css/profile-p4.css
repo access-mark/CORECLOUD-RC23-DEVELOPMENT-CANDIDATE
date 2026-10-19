@@ -1,0 +1,39 @@
+/* RC23: preserved p4 style order; base CSS loaded separately. */
+/* assets/css/rc22-remediation.css */
+/* RC22 bounded additions; preserve the approved existing colour, typography and artwork. */
+[hidden]{display:none!important}
+.skip-link{position:fixed;top:8px;left:8px;z-index:1000;padding:12px 18px;background:#fff;color:#092338;transform:translateY(-160%)}
+.skip-link:focus{transform:none}
+:where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #65dcff;outline-offset:4px}
+.field-label{display:block;font-weight:600;margin:.85rem 0 .35rem;color:#e8f4fa}
+.lead-form :where(input:not([type=checkbox]):not([type=hidden]),select,textarea){width:100%;min-width:0;box-sizing:border-box;font:inherit}
+.lead-form :where(input,select,button){min-height:44px}
+.lead-form input[type=checkbox]{min-height:auto;min-width:20px;width:20px;height:20px;flex-shrink:0}
+.lead-form .check{display:flex;gap:.65rem;align-items:flex-start;line-height:1.5;margin:1rem 0}
+.lead-form .form-privacy,.lead-form .form-help,.form-note{font-size:.9rem;line-height:1.6;margin-top:1rem}
+.form-note:empty,.assessment-status:empty{display:none}
+.assessment-status{padding:1rem;border-left:3px solid #65dcff;line-height:1.6;background:rgba(10,35,55,.6)}
+fieldset.question{min-width:0;border:0;padding:1.3rem 0;margin:0;border-bottom:1px solid rgba(190,224,244,.15)}
+fieldset.question legend{font:inherit;font-weight:600;line-height:1.5;width:100%;padding:0;margin-bottom:.65rem;color:#eef8fc}
+fieldset.question label{display:flex;align-items:flex-start;gap:.65rem;padding:.45rem .2rem;min-height:44px;box-sizing:border-box;line-height:1.5;cursor:pointer}
+fieldset.question input[type=radio]{width:18px;height:18px;flex-shrink:0;margin-top:.25rem}
+.assessment-instructions{line-height:1.65;margin-bottom:1rem}
+.assessment-result-wrap,.assessment-result-wrap h2{scroll-margin-top:120px}
+.assessment-result-wrap[hidden]{display:none!important}
+.result-panel{align-items:start}
+.assessment-coverage{border-left:3px solid #d3b956;padding:.6rem 1rem;line-height:1.6}
+.assessment-diagnostics{margin:1.5rem 0;min-width:0;overflow-wrap:anywhere}
+.assessment-diagnostics li{line-height:1.65;margin:.8rem 0}
+.assessment-diagnostics [data-diagnostic-sections] p{border-bottom:1px solid rgba(190,224,244,.13);padding:.5rem 0}
+.score-block{min-width:0}.score-block [data-score]{overflow-wrap:normal}
+.micro-list{display:flex!important;flex-wrap:wrap;gap:.5rem 1rem;line-height:1.5}
+.micro-list>span{display:inline-block;margin:0!important}
+.partner-card-link{overflow-wrap:anywhere}.partner-logo{max-width:100%;object-fit:contain}
+.modal-backdrop{z-index:200;padding:1rem;box-sizing:border-box;overflow-y:auto;align-items:flex-start}
+.modal-card{max-height:calc(100dvh - 2rem);overflow-y:auto;width:min(100%,600px);box-sizing:border-box;margin:auto;overscroll-behavior:contain}
+.modal-close{min-height:44px;min-width:44px}.guide-follow-up{margin-top:1.3rem}.guide-follow-up summary{cursor:pointer;min-height:44px;padding:.5rem 0;line-height:1.5}
+.footer>a[href*=privacy]{display:block;text-align:center;padding:1rem}
+.cc-guide-content{max-width:850px;line-height:1.8}.cc-guide-content h2{font-size:clamp(1.45rem,3vw,2rem);margin-top:2rem}.cc-guide-content li{margin:.5rem 0}.cc-guide-content table{width:100%;border-collapse:collapse}.cc-guide-content th,.cc-guide-content td{padding:.7rem;text-align:left;border:1px solid rgba(190,224,244,.25);vertical-align:top}
+@media(max-width:780px){.result-panel{display:block!important}.score-block{margin-bottom:1.5rem}.assessment-form{padding:1.1rem!important}.capture-panel{padding:1.1rem!important}.lead-form{min-width:0}.hero-actions{flex-wrap:wrap}.hero-actions .btn{white-space:normal;text-align:center}.cc-guide-content table{font-size:.85rem}}
+@media(max-width:480px){.modal-backdrop{padding:.5rem}.modal-card{max-height:calc(100dvh - 1rem);padding:1rem!important}.assessment-result-wrap h2{font-size:1.8rem}.container{max-width:100%;box-sizing:border-box}.field-label{font-size:.95rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.skip-link{transition:none}}

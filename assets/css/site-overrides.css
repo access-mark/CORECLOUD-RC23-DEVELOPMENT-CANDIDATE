@@ -1,0 +1,54 @@
+/* CoreCloud RC23 shared page overrides; no @scope dependency. */
+
+html{scroll-behavior:smooth}
+@media(min-width:1500px){html:not([data-cc-css="p4"]){--max:min(86vw,1840px)}}
+@media(min-width:2400px){html:not([data-cc-css="p4"]){--max:min(82vw,2200px)}}
+html:not([data-cc-css="p4"]){--cc-editorial-display-weight:480;--cc-editorial-heading-weight:490;--cc-editorial-subheading-weight:510}
+
+/* PROFILE p1: 10 original stylesheets, original order */
+
+
+/* PROFILE p2: 12 original stylesheets, original order */
+
+
+/* PROFILE p3: 13 original stylesheets, original order */
+
+
+/* PROFILE p4: 2 original stylesheets, original order */
+
+
+/* PROFILE p5: 14 original stylesheets, original order */
+
+
+/* PROFILE p6: 16 original stylesheets, original order */
+
+
+/* Assessment-only spacing and typography: no global containers, navigation, grid or page width changes. */
+
+  body.assessment-engine-page .assessment-form { padding: clamp(28px, 2.8vw, 44px); }
+  body.assessment-engine-page h1 { font-weight: 480; }
+  body.assessment-engine-page .assessment-section { padding-block: 12px 20px; }
+  body.assessment-engine-page .assessment-section > .eyebrow { margin-block: 10px 16px; }
+  body.assessment-engine-page fieldset.question { border: 0; border-bottom: 1px solid rgba(190,224,244,.15); padding: 28px 0 32px; margin: 0; min-width: 0; }
+  body.assessment-engine-page fieldset.question legend { display: block; width: 100%; box-sizing: border-box; float: none; border: 0; padding: 0; margin: 0 0 16px; font-size: clamp(1rem,1.08vw,1.13rem); font-weight: 600; line-height: 1.45; color: #eef8fc; }
+  body.assessment-engine-page fieldset.question label { display: flex; align-items: center; width: 100%; box-sizing: border-box; gap: 12px; padding: 10px 4px; margin: 0; min-height: 44px; line-height: 1.5; font-weight: 400; cursor: pointer; }
+  body.assessment-engine-page fieldset.question input[type="radio"] { flex: 0 0 17px; width: 17px; height: 17px; margin: 0; padding: 0; }
+  body.assessment-engine-page .assessment-instructions { margin-bottom: 16px; }
+  body.assessment-engine-page .assessment-instructions p { line-height: 1.7; margin: 0 0 12px; }
+
+@media (max-width: 780px) {
+  
+    body.assessment-engine-page .assessment-form { padding: 22px; }
+    body.assessment-engine-page fieldset.question { padding: 22px 0 28px; }
+    body.assessment-engine-page fieldset.question label { min-height: 44px; padding: 10px 3px; }
+  
+}
+
+/* Keyboard skip link: hidden visually until focused. */
+.skip-link:not(:focus):not(:focus-visible){position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+.skip-link:focus,.skip-link:focus-visible{position:fixed!important;top:12px!important;left:12px!important;width:auto!important;height:auto!important;padding:12px 18px!important;margin:0!important;overflow:visible!important;clip-path:none!important;z-index:10000!important}
+
+/* Keep the modal above the navigation and provide a vh fallback. */
+.modal-backdrop{z-index:1100}
+.modal-card{max-height:calc(100vh - 2rem);max-height:calc(100dvh - 2rem)}
+@media(max-width:480px){.modal-card{max-height:calc(100vh - 1rem);max-height:calc(100dvh - 1rem)}}
